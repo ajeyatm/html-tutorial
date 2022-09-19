@@ -1,0 +1,19 @@
+body {
+  background-color: aqua;
+}
+.box {
+  height: 100px;
+  width: 300px;
+  border: 1px solid black;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.bigger-box {
+  height: 300px;
+  width: 400px;
+  border: 1px solid black;
+  background-color: gray;
+  position: relative;
+}

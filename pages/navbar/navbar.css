@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(231, 233, 234);
+}
+.navbar-wrapper {
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.nav {
+  margin: 10px 20px;
+  /* height: 80px; */
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  height: 60px;
+  width: 80px;
+  border-radius: 50%;
+}
+.nav div,
+.nav a {
+  margin: 10px;
+}
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+#select-lng {
+  width: 140px;
+  margin: 10px;
+}
