@@ -71,6 +71,8 @@ function findArea(geometry, dimensions) {
   if (geometry === 'circle') {
     console.log('Area of circle') //PI*r^2
     console.log(Math.PI * Math.pow(dimensions['radius'], 2)) //PI*r^2
+
+    return `Area of Circle:  ${Math.PI * Math.pow(dimensions['radius'], 2)}`
   } else if (geometry === 'square') {
     console.log('Area of square') //PI*r^2
     console.log(dimensions.length * dimensions.length) //l*l
@@ -82,7 +84,7 @@ function findArea(geometry, dimensions) {
     console.log((dimensions.base * dimensions.height) / 2)
   }
 }
-// findArea('circle', { radius: 10 })
+console.log(findArea('circle', { radius: 10 }))
 // findArea('triangle', { height: 10, base: 20 })
 // findArea('rectangle', { length: 10, width: 20 })
 // findArea('square', { length: 10 })
@@ -105,5 +107,5 @@ function ageComparisonV2(age) {
   }
 }
 
-let ageAns = ageComparisonV2(55)
-console.log(ageAns)
+// let ageAns = ageComparisonV2(55)
+// console.log(ageAns)
