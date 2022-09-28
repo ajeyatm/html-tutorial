@@ -74,3 +74,8 @@ finalArr
 // undefined
 //push - adds items at the last position, unshift -  adds items at the first position
 // undefined
+let nums = [100, 200, 300, 400, 500]
+nums.splice(0, 3)
+//[100, 200, 300]
+nums
+// [400, 500]

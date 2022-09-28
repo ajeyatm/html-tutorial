@@ -80,4 +80,20 @@ users.forEach((item, index, arr) => {
 const namesStartWithAUsingFilter = users.filter((x, y, z) => {
   return x.startsWith('a')
 })
-console.log(namesStartWithAUsingFilter)
+// console.log(namesStartWithAUsingFilter)
+
+let nums = [100, 200, 300, 400, 500]
+let sum = 0
+// for (let i = 0; i < nums.length; i++) {
+//   sum = sum + nums[i]
+// }
+// nums.forEach((apple, mango, banana) => {
+//   sum = sum + apple
+// })
+
+let result = nums.reduce((acc, curr, ind, arr) => {
+  return acc + curr
+}, 0)
+
+let result2 = nums.reduce((acc, curr, ind, arr) => acc + curr)
+console.log(result2)
