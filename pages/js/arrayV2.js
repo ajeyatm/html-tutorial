@@ -39,6 +39,45 @@ function printItems() {
 //   console.log(index)
 // }
 
+//item= value of the item , index=index of the item, arr=value of the array itself
+// users.forEach((item, index, arr) => {
+//   console.log(item, index, arr)
+// })
+
+let usersWithTheirIndexes = []
+// for (let i = 0; i < users.length; i++) {
+//   usersWithTheirIndexes.push(users[i] + '-' + i)
+// }
+
+// for (let i in users) {
+//   usersWithTheirIndexes.push(users[i] + '-' + i)
+// }
+
+// for (let user of users) {
+//   let ind = users.indexOf(user)
+//   usersWithTheirIndexes.push(user + '-' + ind)
+// }
+
 users.forEach((item, index, arr) => {
-  console.log(item, index, arr)
+  usersWithTheirIndexes.push(item + '-' + index)
 })
+
+const newArr = users.map((item, ind, arr) => {
+  return item + '-' + ind
+})
+
+const namesStartWithA = users.map((x, y, z) => {
+  return x.startsWith('a')
+})
+
+let namesStartWithCharA = []
+users.forEach((item, index, arr) => {
+  if (item.startsWith('a')) {
+    namesStartWithCharA.push(item)
+  }
+})
+
+const namesStartWithAUsingFilter = users.filter((x, y, z) => {
+  return x.startsWith('a')
+})
+console.log(namesStartWithAUsingFilter)
