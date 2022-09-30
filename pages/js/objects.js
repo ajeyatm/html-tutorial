@@ -58,8 +58,6 @@ a = {
 Object.keys(person)
 // ['name', 'age', 'email', 'phoneNumber', 'city', 'address', 'hobbies']
 
-Object.keys(person)
-// ['name', 'age', 'email', 'phoneNumber', 'city', 'address', 'hobbies']
 Object.values(person)
 // ['amit', 30, 'amit@gmail.com', 999999999, 'mangaluru', {…}, Array(3)]0: "amit"1: 302: "amit@gmail.com"3: 9999999994: "mangaluru"5: {doorNumber: '#108/4', strtNo: '5th cross', landmark: 'Gandhi circle', areaName: 'Gandhi Nagar', pincode: 560001, …}areaName: "Gandhi Nagar"cityName: "bengaluru"doorNumber: "#108/4"landmark: "Gandhi circle"pincode: 560001strtNo: "5th cross"[[Prototype]]: Object6: (3) ['coocking', 'watching tv prgms', 'playing tt']0: "coocking"1: "watching tv prgms"2: "playing tt"length: 3[[Prototype]]: Array(0)length: 7[[Prototype]]: Array(0)
 person.hasOwnProperty('age')
